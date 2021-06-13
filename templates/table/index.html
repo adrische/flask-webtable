@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Entries{% endblock %}</h1>
+  {% if g.user %}
+    <a class="action" href="{{ url_for('table.create') }}">New</a>
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<table>
+  <tr>
+    <th>Field 1</th>
+    <th>Field 2</th>
+	<th>User</th>
+	<th>Date created</th>
+	<th>Action</th>
+  </tr>
+  {% for entry in entries %}
+	<tr>
+        <td>{{ entry['field1'] }}
+		<td>{{ entry['field2'] }}
+        <td>{{ entry['username'] }}
+		<td>{{ entry['created'].strftime('%Y-%m-%d') }}
+        <td>{% if g.user['id'] == entry['author_id'] %}
+          <a class="action" href="{{ url_for('table.update', id=entry['id']) }}">Edit</a>
+        {% endif %}<td>
+	</tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
