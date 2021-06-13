@@ -2,6 +2,7 @@
 A very simple variant of the Flask tutorial to show and edit a single table.
 
 This is mainly for my own reference.
+
 Known limitations:
 - not properly refactored
 - no tests
@@ -10,6 +11,7 @@ Known limitations:
 
 Windows CMD
 
+```
 cd flask-webtable
 (first time: py -3 -m venv venv)
 venv\Scripts\activate
@@ -18,3 +20,4 @@ set FLASK_APP=flaskwebtable
 set FLASK_ENV=development
 (first time: flask init-db)
 flask run
+```
