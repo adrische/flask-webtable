@@ -8,6 +8,10 @@ Known limitations:
 - not installable as a package
 - no tests
 
+## Screenshot
+
+![Screenshot of flaskt-webtable showing a simple HTML table with two entries](flask-webtable-screenshot.JPG)
+
 ## How to run
 
 Windows CMD
