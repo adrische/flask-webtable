@@ -1,10 +1,11 @@
 # flask-webtable
-A very simple variant of the Flask tutorial to show and edit a single table.
+A very simple variant of the [Flask tutorial](https://flask.palletsprojects.com/en/2.0.x/tutorial/index.html) to show and edit a single table.
 
 This is mainly for my own reference.
 
 Known limitations:
-- not properly refactored
+- CSS not properly refactored
+- not installable as a package
 - no tests
 
 ## How to run
